@@ -8,7 +8,7 @@
 #
 class roundcube::install inherits roundcube {
 
-  include composer
+  require composer
 
   $archive = "roundcubemail-${roundcube::version}-complete"
   $target = "${roundcube::install_dir}/roundcubemail-${roundcube::version}"
