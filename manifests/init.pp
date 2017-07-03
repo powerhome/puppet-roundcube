@@ -166,6 +166,7 @@ class roundcube (
     $env_git_ssl_no_verify,
   ])
 
+  class { 'composer': } ->
   class { 'roundcube::install': } ->
   class { 'roundcube::config': } ~>
   class { 'roundcube::service': }
